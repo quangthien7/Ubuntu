@@ -1,0 +1,40 @@
+# 1) Thư mục /bin (User Binaries) 
+* là thư mục chứa các tệp nhị phân 
+* chứa tệp thực thi, các lệnh Linux được sử dụng ở chế độ người dùng như : cat ,cp ,cd ,ls..
+* thư mục /bin không chứa các thư mục
+# 2) Thư mục /sbin (System Binaries)
+* chứa các tệp nhi phân để cấu hình hệ điều hành
+* /sbin chứa các tệp thực thi nhưng chỉ chứa các tệp nhị phân hệ thống
+* yêu cầu quyền gốc (root) để thực hiện một số tác vụ nhất định (fsck, root, init, ifconfig...), mục đích bảo trì hệ thống
+# 3) /lib
+* Thư mục chứa mô-đun hạt nhân và chứa các thư viện dùng chung của thư mục /sbin và /bin
+# 4) /etc (hệ thống tệp chứa nhiều thư mục con )
+*/etc/ssh/ được sử dụng cấu hình hành vi máy chủ OpenSSH cho toàn hệ thống
+* /etc/opt chứa cấu hình chung cho các ứng dụng được cài đặt bên trong /opt/
+* /etc/resolv.conf xác định các máy chủ DNS sử dụng 
+* /etc/bash.bashrc/ xác định lệnh thực thi khi người dùng khởi chạy bash shell
+* /etc/profile thực thi các lệnh trong tệp khởi động
+* /etc/dhcp/dhclient.conf lưu trữ thông tin liên quan đến mạng theo yêu cầu  máy khách DHCP
+* /etc/fstab nơi gắn kết phân vùng có sẵn cho hệ thống 
+/etc/hostname/ tệp ánh xạ địa chỉ IP tới máy chủ 
+* /etc/host.deny/ tệp liệt kê các máy chủ từ xa bị từ chối truy cập
+* /etc/motd/ cấu hình văn bản khi người dùng đăng nhập vào máy chủ
+* /etc/timezone/ đặt múi giờ địa phương 
+* /etc/sudoers/ tệp kiểm soát quyền liên quan đến sudo cho người dùng 
+* /etc/htpd/conf/ cấu hình cho máy chủ web apache 
+# 5) /dev (device files)
+* tập tin thiết bị 
+# 6) /proc/ (process information) 
+* chứa thông tin về các tiến trình đang chạy
+* lưu thông tin về các tài nguyên đang sử dụng của hệ thống
+7) /home
+* thư mục người dùng chứa tất cả các file cá nhân của người dùng (/home/quangthien, /home/hung)
+8) /boot
+* các file khởi động
+9) /opt (optional)
+* Các ứng dụng tùy chọn, các ứng dụng thêm vào từ các nhà cung cấp độc lập khác
+10) /mnt (mount Directories)
+*
+11) /media
+* thư mục chứa thiết bị cdrom/ media/
+12) /srv (service data)
